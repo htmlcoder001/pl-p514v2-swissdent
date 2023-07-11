@@ -548,6 +548,8 @@ Zapobieganie i właściwe szczotkowanie oraz dbanie o szkliwo przez całe życie
 		.form_wrap {
 			max-width: 300px;
 			margin: 0 auto;
+			padding: 89px 13px 16px;
+			box-shadow: 0 0 20px 13px #00000026;
 		}
 		.form_image_wrap_image {
 			margin: 0 auto;
@@ -570,6 +572,7 @@ Zapobieganie i właściwe szczotkowanie oraz dbanie o szkliwo przez całe życie
 			margin-top: 13px;
 			color: #000;
 			text-align: left;
+			font-size: 16px;
 		}
 		#price {
 			display: flex;
@@ -609,6 +612,9 @@ Zapobieganie i właściwe szczotkowanie oraz dbanie o szkliwo przez całe życie
 			color: gray;
 			font-size: 12px;
 		}
+		div#form_image {
+			margin: 0 0 -88px 0;
+		}
 	</style>
 	
 	<div id="form">
@@ -620,7 +626,8 @@ Zapobieganie i właściwe szczotkowanie oraz dbanie o szkliwo przez całe życie
 		
 		
 		<div class="form_wrap" id="objectScrollAttention">
-			<form method="POST" geo="pl" action="api.php" onsubmit="return validate_form(this, 'Sprawdź, czy wprowadzone dane są poprawne');">
+			<form method="POST" geo="pl" action="api.php" 
+			onsubmit="return validate_form(this, 'Sprawdź, czy wprowadzone dane są poprawne');">
 				<label class="descount">Rabat -50%</label>
 				
 				<div id="price">
